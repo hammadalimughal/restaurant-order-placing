@@ -13,32 +13,35 @@
 
 <body>
     <Section class="banner_sec">
-        <!-- <img class="banner_main" src="images/banner_1.png" alt=""> -->
         <div>
             <img class="logo" src="images/brand_logo.png" alt="">
         </div>
+        <a href="javascript:;history.back()"><i class="fas fa-chevron-left"></i> Go Back</a>
     </Section>
 
     <section class="order-processing">
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-8 col-sm-12 col-12">
+                <div class="col-xxl-4 col-xl-4 col-lg-5 col-md-8 col-sm-12 col-12">
+                    <h4>Orders in Queue</h4>
+                    <div id="queue-order"></div>
+                </div>
+                <div class="col-xxl-4 col-xl-4 col-lg-5 col-md-8 col-sm-12 col-12">
                     <div class="order-processing-card">
                         <div class="processing-item" data-orderid="">
-                            <h4>Order # 2001</h4>
-                            <ul>
-                                <li>
-                                    <h6><span>Bacon Double Cheese burger</span><span>X3</span></h6>
-                                    <p>Two smash greengage patties, two slices of melted vegan cheddar cheese, house-cured and smoked vegan bacon, a toasted brioche-style bun, sautéed red onions, dill pickles, chili ketchup and brushed Dijon mustard.</p>
-                                </li>
-                                <li>
-                                    <h6><span>Bacon Double Cheese burger</span><span>X3</span></h6>
-                                    <p>Two smash greengage patties, two slices of melted vegan cheddar cheese, house-cured and smoked vegan bacon, a toasted brioche-style bun, sautéed red onions, dill pickles, chili ketchup and brushed Dijon mustard.</p>
-                                </li>
-                            </ul>
+                            <h4>Order in Processing <span id="active-order-no"></span></h4>
+                            <div class="progress d-none">
+                                <div class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <ul id="active-order-items"></ul>
                         </div>
                     </div>
                 </div>
+                <div class="col-xxl-4 col-xl-4 col-lg-5 col-md-8 col-sm-12 col-12">
+                    <h4>Completed Orders</h4>
+                    <div id="order-completed">
+                    </div>
+                </div>  
             </div>
         </div>
     </section>
@@ -70,7 +73,7 @@
         </div>
     </div>
     <!-- toast container -->
-    <div class="toast-container position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+    <div class="toast-container position-fixed bottom-0 end-0 p-3" style="z-index: 9999">
 
     </div>
 </body>
@@ -78,4 +81,4 @@
 </html>
 <script src="js/jquery-3.6.3.min.js"></script>
 <script src="js/bootstrap.bundle.min.js"></script>
-<script src="js/currentOrderProcessing.js"></script>
+<script src="js/all.js"></script>

@@ -57,7 +57,18 @@ button:focus {
     margin-top: 90px;
     /*height: 140px;*/
 }
-
+.banner_sec a{
+    position: absolute;
+    left: 30px;
+    bottom: 30px;
+    color: #fff;
+    font-weight: 700;
+    opacity: 0.5;
+    transition: 0.1s;
+}
+.banner_sec a:hover{
+    opacity: 0.8;
+}
 .order-menu {
     position: relative;
     margin: -110px 0 50px;
@@ -206,7 +217,9 @@ button:focus {
 }
 
 .order-menu .postcode_form_card .view-cart {
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-size: 12px;
     font-weight: 700;
     background-color: #242646;
@@ -350,21 +363,30 @@ button:focus {
 }
 
 /* current orders */
-.order-processing .order-processing-card .processing-item{
-    padding: 30px 0;
+.order-processing {
+    padding: 50px 0;
 }
-.order-processing .order-processing-card .processing-item h4 {
+.order-processing .order-processing-card .processing-item{
+    padding: 0;
+}
+.order-processing h4 {
     font-size: 26px;
     font-weight: bold;
     line-height: 20px;
     color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.order-processing h4 span{
+    color: #D90990;
+    font-size: 20px;
 }
 .order-processing .order-processing-card .processing-item ul li{
     position: relative;
     padding: 15px;
     background-color: rgba(255, 255, 255, 0.19);
     margin-top: 20px;
-    margin-left: 20px;
 }
 .order-processing .order-processing-card .processing-item ul li h6{
     display: flex;
@@ -382,4 +404,70 @@ button:focus {
     font-weight: 300;
     opacity: .85;
     color: #fff;
+    margin: 0;
+}
+.no-data-text{
+    color: #D90990;
+    font-weight: 500;
+    margin: 20px 0;
+}
+.your_account_card {
+    /* background: #EEEEEE; */
+    /* border-radius: 10px; */
+    /* border: 1px solid #D90990; */
+    /* padding: 40px; */
+    /* width: 100%;  */
+    padding-top: 10px;
+}
+.order-processing .your_account_card_inner {
+    background: #4d4f69;
+    border-radius: 10px;
+    border: 1px solid rgba(217, 9, 144, 0.5);
+    color: #ffff;
+}
+/* .order-processing h4{
+    color: #D90990;
+    font-weight: 700;
+} */
+.order-processing .your_account_card_inner .your_note{
+    padding: 20px;
+}
+.order-processing .your_account_card_inner .your_note h6 {
+    font-family: 'Raleway',sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    margin: 0;
+    padding-left: 5px;
+}
+.order-processing .your_account_card_inner .your_note span {
+    display: block;
+    font-family: 'Raleway',sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+}
+hr {
+    margin: 0;
+    background-color: #fff;
+}
+.order-processing .your_account_card_inner .order_subtotal, .order-processing .your_account_card_inner .order_summary {
+    padding: 20px;
+}
+.order-processing .your_account_card_inner .order_subtotal ul li, .order-processing .your_account_card_inner .order_summary ul li {
+    font-family: 'Raleway',sans-serif;
+    font-size: 11px;
+    color: #fff;
+    font-weight: 500;
+    display: flex;
+    line-height: 20px;
+    justify-content: space-between;
+}
+/* progress bar css */
+.progress{
+    height: 4px;
+    margin: 25px 0;
+    transition: 0s;
+}
+.progress .progress-bar{
+    background-color: #D90990;
+    transition: 0s;
 }
