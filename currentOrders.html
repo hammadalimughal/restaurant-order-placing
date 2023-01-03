@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://kit-pro.fontawesome.com/releases/v5.15.3/css/pro.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <title>The Last Hour</title>
+</head>
+
+<body>
+    <Section class="banner_sec">
+        <!-- <img class="banner_main" src="images/banner_1.png" alt=""> -->
+        <div>
+            <img class="logo" src="images/brand_logo.png" alt="">
+        </div>
+    </Section>
+
+    <section class="order-processing">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-8 col-sm-12 col-12">
+                    <div class="order-processing-card">
+                        <div class="processing-item" data-orderid="">
+                            <h4>Order # 2001</h4>
+                            <ul>
+                                <li>
+                                    <h6><span>Bacon Double Cheese burger</span><span>X3</span></h6>
+                                    <p>Two smash greengage patties, two slices of melted vegan cheddar cheese, house-cured and smoked vegan bacon, a toasted brioche-style bun, sautéed red onions, dill pickles, chili ketchup and brushed Dijon mustard.</p>
+                                </li>
+                                <li>
+                                    <h6><span>Bacon Double Cheese burger</span><span>X3</span></h6>
+                                    <p>Two smash greengage patties, two slices of melted vegan cheddar cheese, house-cured and smoked vegan bacon, a toasted brioche-style bun, sautéed red onions, dill pickles, chili ketchup and brushed Dijon mustard.</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- offcanvas cart -->
+    <div class="viewcart-offcanvas offcanvas offcanvas-end" tabindex="-1" id="view-cart-offcanvas"
+        aria-labelledby="view-cart-offcanvasLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="view-cart-offcanvasLabel">Your Items in Cart</h5>
+            <button type="button" class="close-canvas" data-bs-dismiss="offcanvas" aria-label="Close"><i
+                    class="fas fa-times"></i></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="no-items d-flex">
+                <img class="img-fluid" src="images/hungry-emoji.png" alt="hungry">
+                <p>Add items in cart to Show here!</p>
+            </div>
+            <div class="cart-listing">
+                <ul class="cart-ul">
+
+                </ul>
+                <div class="offcanvas-footer">
+                    <h3 class="total-amount">
+                        <span>Total Amount:</span>
+                        <span>500 &pound;</span>
+                    </h3>
+                    <a class="place-order" href="javascript:;">Place an Order</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- toast container -->
+    <div class="toast-container position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+
+    </div>
+</body>
+
+</html>
+<script src="js/jquery-3.6.3.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/currentOrderProcessing.js"></script>

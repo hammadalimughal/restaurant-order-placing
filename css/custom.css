@@ -1,0 +1,385 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+html,
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    overflow-x: hidden;
+    background-color: #242646;
+}
+
+main {
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn:focus {
+    outline: none;
+}
+
+ul,
+ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+button:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.btn:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.banner_sec {
+    position: relative;
+    height: 340px;
+    background: linear-gradient(15deg, rgba(36, 38, 70, 0.7), rgba(36, 38, 70, 0.7)), url(../images/banner_1.png);
+    display: flex;
+    justify-content: center;
+    background-size: cover;
+}
+
+.banner_sec .logo {
+    width: 150px;
+    margin-top: 90px;
+    /*height: 140px;*/
+}
+
+.order-menu {
+    position: relative;
+    margin: -110px 0 50px;
+    /* transform: translateY(-110px); */
+}
+
+.order-menu .postcode_form_card {
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.65);
+}
+
+.order-menu .postcode_form_card .postcode_form_text h2 {
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #242646;
+    font-weight: 900;
+    text-align: center;
+}
+
+.order-menu .postcode_form_card .postcode_form_text p {
+    color: #242646;
+    font-size: 12px;
+}
+
+/* order menu css */
+.order-menu .postcode_form_card .custom_accordion_item {
+    border: 1px solid #242646;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.order-menu .postcode_form_card .custom_accordion_item .accordion-header button {
+    background-color: #EEEEEE;
+    border-radius: 5px;
+    box-shadow: none;
+}
+
+.order-menu .postcode_form_card .custom_accordion_item .accordion-header button:not(.collapsed) {
+    color: #242646;
+    border-radius: 5px 5px 0 0;
+    border-bottom: 1px solid #242646;
+    box-shadow: none;
+}
+
+.order-menu .postcode_form_card .custom_accordion_item .accordion-header h3 {
+
+    font-size: 14px;
+    color: #242646;
+    font-weight: bold;
+}
+
+.order-menu .postcode_form_card .custom_accordion_item .accordion-header h5 {
+
+    font-size: 12px;
+    margin: 0;
+}
+
+.order-menu .postcode_form_card .custom_accordion_item .custom_accordion_body {
+    background-color: #EEEEEE;
+}
+
+.order-menu .postcode_form_card .custom_accordion_item .custom_accordion_body ul li {
+    position: relative;
+}
+
+.order-menu .postcode_form_card .custom_accordion_item .custom_accordion_body ul li span i {
+    margin-left: 5px;
+    font-size: 15px;
+}
+
+.order-menu .postcode_form_card .custom_accordion_item .custom_accordion_body ul li a {
+    display: flex;
+    justify-content: space-between;
+
+    font-size: 12px;
+    font-weight: 400;
+    color: #242646;
+    border-bottom: 1px solid #24264696;
+    padding: 20px 10px;
+}
+
+.order-menu .postcode_form_card .custom_accordion_item .custom_accordion_body ul li .side_collapse {
+    position: absolute;
+    background-color: #EEEEEE;
+    left: 110%;
+    top: -15px;
+    border-radius: 20px;
+    padding: 20px;
+    width: 400px;
+}
+
+.order-menu .postcode_form_card .custom_accordion_item .custom_accordion_body ul li .side_collapse::before {
+    content: '';
+    position: absolute;
+    clip-path: polygon(100% 0, 0 50%, 100% 100%);
+    left: -14px;
+    width: 15px;
+    height: 25px;
+    top: 30px;
+    background-color: #EEEEEE;
+}
+
+.order-menu .postcode_form_card .custom_accordion_item .custom_accordion_body ul li .side_collapse h2 {
+    color: #242646;
+
+    font-size: 12px;
+    font-weight: 600;
+    margin: 10px 0px 5px;
+}
+
+.order-menu .postcode_form_card .custom_accordion_item .custom_accordion_body ul li .side_collapse input {
+    width: 100%;
+    height: 40px;
+    border: 1px solid #D90990;
+    outline: none;
+    padding: 8px;
+}
+
+.order-menu .postcode_form_card .custom_accordion_item .custom_accordion_body ul li .side_collapse textarea {
+    width: 100%;
+    height: 90px;
+    border: 1px solid #D90990;
+    outline: none;
+    padding: 8px;
+}
+
+.order-menu .postcode_form_card .custom_accordion_item .custom_accordion_body ul li .side_collapse span {
+
+    font-size: 10px;
+    font-weight: 400;
+}
+
+.order-menu .postcode_form_card .custom_accordion_item .custom_accordion_body ul li .side_collapse .save {
+    width: 100%;
+    height: 40px;
+    background-color: #D90990;
+    outline: none;
+    border: none;
+    margin-top: 10px;
+
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.order-menu .postcode_form_card .view-cart {
+
+    font-size: 12px;
+    font-weight: 700;
+    background-color: #242646;
+    color: #fff;
+    width: 100%;
+    outline: none;
+    border: none;
+    height: 50px;
+    border-radius: 5px;
+    margin-top: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+
+
+/* viewcart-offcanvas */
+.viewcart-offcanvas {
+    background-color: #242646;
+    color: #fff;
+}
+
+.viewcart-offcanvas .close-canvas {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+    opacity: 0.4;
+    font-size: 20px;
+}
+
+.viewcart-offcanvas .close-canvas:hover {
+    opacity: 1;
+}
+
+.viewcart-offcanvas .offcanvas-title {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.viewcart-offcanvas .offcanvas-body .no-items {
+    font-size: 22px;
+}
+
+.viewcart-offcanvas .no-items {
+    text-align: center;
+    min-height: calc(100vh - 150px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    display: none;
+}
+
+.viewcart-offcanvas .no-items img {
+    width: 200px;
+    margin-bottom: 30px;
+}
+
+.viewcart-offcanvas .cart-listing {
+    min-height: calc(100vh - 105px);
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.viewcart-offcanvas .cart-listing .cart-ul .cart-item {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 5px 0;
+}
+
+.viewcart-offcanvas .cart-listing .cart-ul .cart-item ul li:nth-child(1),
+.viewcart-offcanvas .cart-listing .cart-ul .cart-item ul li:nth-child(2) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.viewcart-offcanvas .cart-listing .cart-ul .cart-item ul li button{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+    opacity: 0.3;
+}
+.viewcart-offcanvas .cart-listing .cart-ul .cart-item ul li button:hover{
+    opacity: 1;
+}
+
+.viewcart-offcanvas .cart-listing .cart-ul .cart-item h4 {
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+.viewcart-offcanvas .cart-listing .cart-ul .cart-item h5 {
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.viewcart-offcanvas .cart-listing .cart-ul .cart-item h5 span:nth-last-child(1){
+    display: inline-block;
+    margin-left: 15px;
+}
+.viewcart-offcanvas .cart-listing .cart-ul .cart-item p {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.6);
+    margin: 0;
+    line-height: 18px;
+    max-height: 36px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.viewcart-offcanvas .offcanvas-footer .total-amount {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 20px;
+}
+
+.viewcart-offcanvas .offcanvas-footer .total-amount span {
+    padding: 0 5px;
+}
+
+.viewcart-offcanvas .offcanvas-footer .place-order {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: #d90990;
+    border-radius: 5px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    height: 40px;
+}
+
+/* current orders */
+.order-processing .order-processing-card .processing-item{
+    padding: 30px 0;
+}
+.order-processing .order-processing-card .processing-item h4 {
+    font-size: 26px;
+    font-weight: bold;
+    line-height: 20px;
+    color: #fff;
+}
+.order-processing .order-processing-card .processing-item ul li{
+    position: relative;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.19);
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.order-processing .order-processing-card .processing-item ul li h6{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 17px;
+    font-weight: 500;
+    margin: 0 0 5px;
+    color: #fff;
+}
+.order-processing .order-processing-card .processing-item ul li p{
+    font-family: 'Raleway',sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 300;
+    opacity: .85;
+    color: #fff;
+}
