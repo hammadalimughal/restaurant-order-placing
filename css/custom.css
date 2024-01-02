@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 html,
 * {
@@ -57,7 +58,8 @@ button:focus {
     margin-top: 90px;
     /*height: 140px;*/
 }
-.banner_sec a{
+
+.banner_sec a {
     position: absolute;
     left: 30px;
     bottom: 30px;
@@ -66,13 +68,51 @@ button:focus {
     opacity: 0.5;
     transition: 0.1s;
 }
-.banner_sec a:hover{
+
+.banner_sec a:hover {
     opacity: 0.8;
 }
+
+.auth-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.auth-img img {
+    width: 100px;
+}
+
+.input-field input {
+    width: 100%;
+    height: 50px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    border: none;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: #000;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.account-p {
+    margin: 15px 0;
+    text-align: center;
+    font-weight: 600;
+}
+.account-p a{
+color: #534a9a;
+}
+.account-p a:hover{
+    text-decoration: underline;
+}
+
 .order-menu {
     position: relative;
     margin: -110px 0 50px;
-    /* transform: translateY(-110px); */
 }
 
 .order-menu .postcode_form_card {
@@ -297,14 +337,16 @@ button:focus {
     align-items: center;
     justify-content: space-between;
 }
-.viewcart-offcanvas .cart-listing .cart-ul .cart-item ul li button{
+
+.viewcart-offcanvas .cart-listing .cart-ul .cart-item ul li button {
     background-color: transparent;
     border: none;
     outline: none;
     color: #fff;
     opacity: 0.3;
 }
-.viewcart-offcanvas .cart-listing .cart-ul .cart-item ul li button:hover{
+
+.viewcart-offcanvas .cart-listing .cart-ul .cart-item ul li button:hover {
     opacity: 1;
 }
 
@@ -321,10 +363,12 @@ button:focus {
     align-items: center;
     justify-content: space-between;
 }
-.viewcart-offcanvas .cart-listing .cart-ul .cart-item h5 span:nth-last-child(1){
+
+.viewcart-offcanvas .cart-listing .cart-ul .cart-item h5 span:nth-last-child(1) {
     display: inline-block;
     margin-left: 15px;
 }
+
 .viewcart-offcanvas .cart-listing .cart-ul .cart-item p {
     font-size: 12px;
     color: rgba(255, 255, 255, 0.6);
@@ -366,9 +410,11 @@ button:focus {
 .order-processing {
     padding: 50px 0;
 }
-.order-processing .order-processing-card .processing-item{
+
+.order-processing .order-processing-card .processing-item {
     padding: 0;
 }
+
 .order-processing h4 {
     font-size: 26px;
     font-weight: bold;
@@ -378,17 +424,20 @@ button:focus {
     align-items: center;
     justify-content: space-between;
 }
-.order-processing h4 span{
+
+.order-processing h4 span {
     color: #D90990;
     font-size: 20px;
 }
-.order-processing .order-processing-card .processing-item ul li{
+
+.order-processing .order-processing-card .processing-item ul li {
     position: relative;
     padding: 15px;
     background-color: rgba(255, 255, 255, 0.19);
     margin-top: 20px;
 }
-.order-processing .order-processing-card .processing-item ul li h6{
+
+.order-processing .order-processing-card .processing-item ul li h6 {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -397,8 +446,9 @@ button:focus {
     margin: 0 0 5px;
     color: #fff;
 }
-.order-processing .order-processing-card .processing-item ul li p{
-    font-family: 'Raleway',sans-serif;
+
+.order-processing .order-processing-card .processing-item ul li p {
+    font-family: 'Raleway', sans-serif;
     font-size: 14px;
     line-height: 20px;
     font-weight: 300;
@@ -406,11 +456,13 @@ button:focus {
     color: #fff;
     margin: 0;
 }
-.no-data-text{
+
+.no-data-text {
     color: #D90990;
     font-weight: 500;
     margin: 20px 0;
 }
+
 .your_account_card {
     /* background: #EEEEEE; */
     /* border-radius: 10px; */
@@ -419,41 +471,50 @@ button:focus {
     /* width: 100%;  */
     padding-top: 10px;
 }
+
 .order-processing .your_account_card_inner {
     background: #4d4f69;
     border-radius: 10px;
     border: 1px solid rgba(217, 9, 144, 0.5);
     color: #ffff;
 }
+
 /* .order-processing h4{
     color: #D90990;
     font-weight: 700;
 } */
-.order-processing .your_account_card_inner .your_note{
+.order-processing .your_account_card_inner .your_note {
     padding: 20px;
 }
+
 .order-processing .your_account_card_inner .your_note h6 {
-    font-family: 'Raleway',sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 12px;
     font-weight: bold;
     margin: 0;
     padding-left: 5px;
 }
+
 .order-processing .your_account_card_inner .your_note span {
     display: block;
-    font-family: 'Raleway',sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 12px;
     font-weight: 700;
 }
+
 hr {
     margin: 0;
     background-color: #fff;
 }
-.order-processing .your_account_card_inner .order_subtotal, .order-processing .your_account_card_inner .order_summary {
+
+.order-processing .your_account_card_inner .order_subtotal,
+.order-processing .your_account_card_inner .order_summary {
     padding: 20px;
 }
-.order-processing .your_account_card_inner .order_subtotal ul li, .order-processing .your_account_card_inner .order_summary ul li {
-    font-family: 'Raleway',sans-serif;
+
+.order-processing .your_account_card_inner .order_subtotal ul li,
+.order-processing .your_account_card_inner .order_summary ul li {
+    font-family: 'Raleway', sans-serif;
     font-size: 11px;
     color: #fff;
     font-weight: 500;
@@ -461,13 +522,15 @@ hr {
     line-height: 20px;
     justify-content: space-between;
 }
+
 /* progress bar css */
-.progress{
+.progress {
     height: 4px;
     margin: 25px 0;
     transition: 0s;
 }
-.progress .progress-bar{
+
+.progress .progress-bar {
     background-color: #D90990;
     transition: 0s;
 }

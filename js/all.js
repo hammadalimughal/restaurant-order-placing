@@ -1,7 +1,42 @@
 // ******************** place order ********************* //
 let orderItems;
 let cartItems;
-let completedOrders
+let completedOrders;
+
+$(document).ready(function () {
+    const user = localStorage.getItem('user')
+    var users = JSON.parse(localStorage.getItem('users')) || []
+    if (!user) {
+        if (!$("body").hasClass('login')) {
+            location.href = "login.html"
+        }
+    }
+    $(".login-form").submit(function (e) {
+        e.preventDefault()
+        const email = $(this).find('.email').val()
+        const password = $(this).find('.password').val()
+        const userWithEmail = users.find(user => user.email === email);
+        if (userWithEmail) {
+            if (userWithEmail.password == password) {
+                localStorage.setItem('user', JSON.stringify(userWithEmail))
+                return location.href = "index.html"
+            }
+        }
+        alert('Invalid Credentials')
+    })
+    $(".register-form").submit(function (e) {
+        e.preventDefault()
+        const fname = $(this).find('.fname').val()
+        const lname = $(this).find('.lname').val()
+        const email = $(this).find('.email').val()
+        const password = $(this).find('.password').val()
+        const tempUser = { fname, lname, email, password }
+        users.push(tempUser)
+        localStorage.setItem('users', JSON.stringify(users))
+        location.href = "login.html"
+    })
+})
+
 $(document).ready(function () {
     // cart items
     if (localStorage.getItem("lasthourcart") != null) {
@@ -192,14 +227,14 @@ function renderOrderData(order, elem) {
         </div>
             `
     }
-    if(tempData != ""){
+    if (tempData != "") {
         $(elem).html(tempData)
     }
-    else{
-        if(elem == "#queue-order"){
+    else {
+        if (elem == "#queue-order") {
             $(elem).html(`<p class="no-data-text">None of the order is Pending!</p>`)
         }
-        else{
+        else {
             $(elem).html(`<p class="no-data-text">None of the order is Completed!</p>`)
         }
     }
@@ -237,7 +272,7 @@ function renderActiveOrder() {
             renderActiveOrder()
         }, 20000);
     }
-    else{
+    else {
         $(".order-processing-card .progress").addClass("d-none")
         $("#active-order-items").html(`<p class="no-data-text">None of the order is in process!</p>`)
     }
